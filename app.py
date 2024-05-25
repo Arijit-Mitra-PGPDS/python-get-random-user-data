@@ -7,7 +7,6 @@ URL = f"https://randomuser.me/api/"
 @app.route("/users")
 def home():
     response = requests.get(URL)
-    print(response.json())
     return response.json()
 
 @app.route("/get-picture")
